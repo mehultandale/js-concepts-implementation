@@ -1,22 +1,10 @@
 
 
-console.log("JS Concepts");
+// import strictMode from "strictMode";
+let strictMode = require("./strictMode.js");
 
 
-console.log("Concept: Script mode");
+console.log("\n\n >>>> JS Concepts <<<< \n\n");
 
 
-function displayNums(a, b) {
-	"use strict";
-	console.log("Strict mode works with 'simple' parameter list");
-	console.log("a", a, "b", b);
-}
-displayNums(1, 2);
-
-console.log("but NOT with default parameter list");
-function displayAlphabets(letter1='x', letter2='y') {
-	// Comment, uncomment this line to see the concept work
-	"use strict";
-	console.log(letter1, letter2);
-}
-displayAlphabets();
+strictMode();
