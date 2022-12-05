@@ -18,7 +18,7 @@ function displayAlphabets(letter1='x', letter2='y') {
 
 
 function strictModeDemo() {
-	console.log(" Concept: Strict mode \n\n");
+	console.log("\x1b[44m%s\x1b[0m", "Concept: Strict mode");
 	displayNums(1, 2);
 	displayAlphabets();
 }
