@@ -11,5 +11,13 @@ class Vehicle {
 }
 
 
-const hondaCity = new Vehicle("car", "2010");
-hondaCity.printYear();
+class Motorcycle extends Vehicle {
+	printType() {
+		console.log(this.type);
+	}
+}
+
+
+const davidson = new Motorcycle("Davidson", 2012);
+davidson.printType();
+davidson.printYear();
