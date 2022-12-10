@@ -23,7 +23,6 @@ function classDemo() {
 	const davidson = new Motorcycle("Davidson", 2012);
 	davidson.printType();
 	davidson.printYear();
-	console.log("\n\n");
 }
 
 
