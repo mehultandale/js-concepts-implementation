@@ -15,7 +15,7 @@ function tryCatchExample() {
 		console.log("This is a catch block that has caught exception: ", e);
 	} finally {
 		console.log("This is a finally block");
-		console.log("\n\n");
+		console.log("\n");
 	}
 }
 

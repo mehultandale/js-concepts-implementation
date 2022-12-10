@@ -11,8 +11,10 @@ let iifeExample = require("./iifeExample.js");
 let strictMode = require("./strictMode.js");
 let classesExample = require("./classesExample.js");
 let tryCatchExample = require("./tryCatchExample.js");
+let labelExample = require("./labelExample.js");
 
 
 strictMode();
 classesExample();
 tryCatchExample();
+labelExample();
