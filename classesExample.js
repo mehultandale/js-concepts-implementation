@@ -17,7 +17,14 @@ class Motorcycle extends Vehicle {
 	}
 }
 
+function classDemo() {
+	console.log("\n");
+	console.log("\x1b[44m%s\x1b[0m", "Concept: Classes");
+	const davidson = new Motorcycle("Davidson", 2012);
+	davidson.printType();
+	davidson.printYear();
+	console.log("\n\n");
+}
 
-const davidson = new Motorcycle("Davidson", 2012);
-davidson.printType();
-davidson.printYear();
+
+module.exports = classDemo;
