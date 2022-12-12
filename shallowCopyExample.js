@@ -13,7 +13,7 @@ function shallowCopyExample() {
 	userPreferredBrand.name = "ABC co";
 	console.log("Property value of source object (after the shallow copy's property is changed): ");
 	console.log(userDevice);
-	console.log("\n\n");
+	console.log("\n");
 }
 
 

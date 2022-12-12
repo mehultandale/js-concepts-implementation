@@ -13,6 +13,7 @@ let classesExample = require("./classesExample.js");
 let tryCatchExample = require("./tryCatchExample.js");
 let labelExample = require("./labelExample.js");
 let shallowCopyExample = require("./shallowCopyExample.js");
+let deepCopyExample = require("./deepCopyExample.js");
 
 
 strictMode();
@@ -20,3 +21,4 @@ classesExample();
 tryCatchExample();
 labelExample();
 shallowCopyExample();
+deepCopyExample();
