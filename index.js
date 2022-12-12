@@ -12,9 +12,11 @@ let strictMode = require("./strictMode.js");
 let classesExample = require("./classesExample.js");
 let tryCatchExample = require("./tryCatchExample.js");
 let labelExample = require("./labelExample.js");
+let shallowCopyExample = require("./shallowCopyExample.js");
 
 
 strictMode();
 classesExample();
 tryCatchExample();
 labelExample();
+shallowCopyExample();
