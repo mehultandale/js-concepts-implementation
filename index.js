@@ -7,13 +7,13 @@ console.log("\n\n");
 
 
 /* App's modules */
-let iifeExample = require("./iifeExample.js");
-let strictMode = require("./strictMode.js");
-let classesExample = require("./classesExample.js");
-let tryCatchExample = require("./tryCatchExample.js");
-let labelExample = require("./labelExample.js");
-let shallowCopyExample = require("./shallowCopyExample.js");
-let deepCopyExample = require("./deepCopyExample.js");
+let iifeExample = require("./console/iifeExample.js");
+let strictMode = require("./console/strictMode.js");
+let classesExample = require("./console/classesExample.js");
+let tryCatchExample = require("./console/tryCatchExample.js");
+let labelExample = require("./console/labelExample.js");
+let shallowCopyExample = require("./console/shallowCopyExample.js");
+let deepCopyExample = require("./console/deepCopyExample.js");
 
 
 strictMode();
