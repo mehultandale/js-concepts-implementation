@@ -1,30 +1,39 @@
 
 
-function insertCanvas() {
-	/* Getting and configuring the canvas element */
+/* Getting and configuring the canvas element */
+function configureCanvas() {
 	const canvas = document.getElementById("canvasDemo");
 	canvas.height = 350;
 	canvas.width = 350;
 	const ctx = canvas.getContext("2d");
+	return {
+		"canvas": canvas,
+		"ctx": ctx
+	};
+}
+
+function insertCanvas() {
+
+	let canvasObj = configureCanvas();
 
 	/* Adding text to it */
-	ctx.font = "12px serif";
-	ctx.fillStyle = "blue";
-	ctx.fillText("This text is on a canvas!", 100, 100);
+	canvasObj.ctx.font = "12px serif";
+	canvasObj.ctx.fillStyle = "blue";
+	canvasObj.ctx.fillText("This text is on a canvas!", 100, 100);
 
 	/* Drawing a line under it */
-	ctx.beginPath();
-	ctx.moveTo(100, 110);
-	ctx.lineTo(220, 110);
-	ctx.stroke();
+	canvasObj.ctx.beginPath();
+	canvasObj.ctx.moveTo(100, 110);
+	canvasObj.ctx.lineTo(220, 110);
+	canvasObj.ctx.stroke();
 
 	/* Adding a gradient to a rectangle */
-	let gradient = ctx.createLinearGradient(0, 130, 700, 700);
+	let gradient = canvasObj.ctx.createLinearGradient(0, 130, 700, 700);
 	gradient.addColorStop(0, "yellow");
 	gradient.addColorStop(0.2, "red");
 	gradient.addColorStop(0.6, "blue");
-	ctx.fillStyle = gradient;
-	ctx.fillRect(0, 130, 700, 700);
+	canvasObj.ctx.fillStyle = gradient;
+	canvasObj.ctx.fillRect(0, 130, 700, 700);
 }
 
 
