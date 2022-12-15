@@ -1,5 +1,12 @@
 
 
+import batteryStatusDemo from "./batteryStatusDemo.js";
+
+
+/* Battery status */
+batteryStatusDemo.logBatteryStatus();
+
+
 /* Getting and configuring the canvas element */
 const canvas = document.getElementById("canvasDemo");
 canvas.height = 350;
