@@ -12,28 +12,39 @@ function configureCanvas() {
 	};
 }
 
-function insertCanvas() {
-
-	let canvasObj = configureCanvas();
-
-	/* Adding text to it */
+/* Adding text to it */
+function addTextToCanvas(canvasObj) {
 	canvasObj.ctx.font = "12px serif";
 	canvasObj.ctx.fillStyle = "blue";
 	canvasObj.ctx.fillText("This text is on a canvas!", 100, 100);
+	return canvasObj;
+}
 
-	/* Drawing a line under it */
+/* Drawing a line under it */
+function drawLineUnderText(canvasObj) {
 	canvasObj.ctx.beginPath();
 	canvasObj.ctx.moveTo(100, 110);
 	canvasObj.ctx.lineTo(220, 110);
 	canvasObj.ctx.stroke();
+	return canvasObj;
+}
 
-	/* Adding a gradient to a rectangle */
+/* Adding a gradient to a rectangle */
+function addGradientToARectangle(canvasObj) {
 	let gradient = canvasObj.ctx.createLinearGradient(0, 130, 700, 700);
 	gradient.addColorStop(0, "yellow");
 	gradient.addColorStop(0.2, "red");
 	gradient.addColorStop(0.6, "blue");
 	canvasObj.ctx.fillStyle = gradient;
 	canvasObj.ctx.fillRect(0, 130, 700, 700);
+}
+
+/* Insert Canvas to DOM */
+function insertCanvas() {
+	let canvasObj = configureCanvas();
+	canvasObj = addTextToCanvas(canvasObj);
+	canvasObj = drawLineUnderText(canvasObj);
+	addGradientToARectangle(canvasObj);
 }
 
 
