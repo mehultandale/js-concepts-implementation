@@ -1,0 +1,4 @@
+My understanding of TypeScript:
+
+> It is a development tool
+> It transpiles code into JavaScript

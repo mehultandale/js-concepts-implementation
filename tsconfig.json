@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "out": "ts-js/out.js", 
+        "sourceMap": true, 
+        "target": "es5"
+    }, 
+    "files": [
+        "typeScriptExample.ts"
+    ]
+}
