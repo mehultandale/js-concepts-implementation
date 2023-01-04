@@ -1,4 +1,9 @@
-function isEven(num) {
-    return false;
+function showPersonDetails(p1) {
+    console.log(p1.name);
 }
-console.log(isEven(22));
+var p1 = {
+    name: "John Doe",
+    eid: 1,
+    cit_id: 2
+};
+showPersonDetails(p1);

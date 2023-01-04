@@ -1,17 +1,29 @@
 
 
+
 type employee = {
 	name: string,
 	eid: number
 }
 
-
-function isEven(emp: employee): boolean {
-	return false;
+type citizen = {
+	cit_id: number
 }
 
-let employee1 = {
-	name: "John",
-	eid: 1
+type person = employee & citizen;
+
+
+
+function showPersonDetails(p1: person) {
+	console.log(p1.name);
+}
+
+
+
+let p1 = {
+	name: "John Doe",
+	eid: 1,
+	cit_id: 2
 };
-console.log(isEven(employee1));
+
+showPersonDetails(p1);
