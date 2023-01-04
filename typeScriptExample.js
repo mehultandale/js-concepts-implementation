@@ -1,2 +1,4 @@
-var employee = { "name": "John", "age": 27 };
-console.log(employee);
+function isEven(num) {
+    return false;
+}
+console.log(isEven(22));
